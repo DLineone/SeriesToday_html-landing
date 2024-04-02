@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="./images/Logo.svg" alt="seriesToday">
+    </header>
+    <div class="unfilter">
+        <a class="link">
+            <img src="./images/unfilter.svg" alt="">
+        </a>
+    </div>
+    <nav class="menu">
+        <ul class="filters">
+            <li class="menu-item">
+                <a class="link">Сегодня</a>
+            </li>
+            <li class="menu-item">
+                <a class="link">Популярные</a>
+            </li>
+            <li class="menu-item">
+                <a class="link">Фавориты</a>
+            </li>
+            <li class="menu-item menu-item_right link">
+                <img height="40" width="40" src="./images/searchByDate.svg" alt="">
+                <input type="date" class="datepicker-input">
+            </li> 
+        </ul>
+        <div class="search">
+            <input class="search__input" type="text" placeholder="Найти">
+            <a class="link search__button">
+                <img src="./images/search_icon.svg" alt="">
+            </a>
+        </div>
+    </nav>
+    <div class="user-section">
+        <button class="button button_color_primary button_login">Вход</button>
+        <button class="button button_transparent_primary button_sign-in">Регистрация</button>
+    </div>
+    <main class="main main_two_side">
+        <div class="main__content content_post">
+            <div class="content__item">
+                <div>
+                    <img class="content__poster" src="./images/poster.png" alt="" srcset="">
+                    <div class="rating">
+                        <div class="rating__numbers">
+                            <div class="rating__positive">10</div>
+                            <div class="rating__negative">5</div>
+                        </div>
+                        <div class="rating__display">
+                            <div class="rating__positive" style="--part: 70%;"></div>
+                            <div class="rating__negative" style="--part: 30%;"></div>
+                        </div>
+                        <div class="rating__icons">
+                            <div class="rating__positive">
+                                <img src="./images/positive.svg" alt="" srcset="">
+                            </div>
+                            <div class="rating__negative">
+                                <img src="./images/negative.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item__header">
+                        <span class="header__name">
+                            Шерлок - 2 сезон - 3 серия
+                        </span>
+                        <span class="header__date">
+                            12.<wbr>10.<wbr>2023
+                        </span>
+                    </div>
+                    <div class="item__countrys">
+                        <span class="text-bold">
+                            Страна:
+                        </span>
+                        <span class="text-fade">
+                            Великобритания
+                        </span>
+                    </div>
+                    <div class="item__genres">
+                        <span class="text-bold">
+                            Жанр:
+                        </span>
+                        <span class="text-fade">
+                            криминальный детектив, комедийная драма
+                        </span>
+                    </div>
+                    <div class="item__directors">
+                        <span class="text-bold">
+                            Режисеры:
+                        </span>
+                        <span class="text-fade">
+                            Марк Гэтисс, Стивен Моффат
+                        </span>
+                    </div>
+                    <div class="item__actors">
+                        <span class="text-bold">
+                            В ролях:
+                        </span>
+                        <span class="text-fade">
+                            Бенедикт Камбербэтч, Мартин Фримен, Руперт Грейвс, Уна Стаббс, Марк Гэтисс, Луиза Брили, Эндрю Скотт, Аманда Аббингтон, Шан Брук
+                        </span>    
+                    </div>
+                    <div class="item__description">
+                        Сериал представляет собой вольную адаптацию книг Артура Конан Дойля о детективе Шерлоке Холмсе и его напарнике Джоне Ватсоне, в которой действие перенесено в XXI век. Детектив Шерлок Холмс, подыскивая соседа по квартире, знакомится с Джоном Ватсоном — военным врачом, вернувшимся из Афганистана. Шерлок сразу впечатляет Ватсона, рассказав Ватсону всю правду о нём самом: о том, что он служил в Афганистане, и о том, что боль в его ноге имеет психосоматическую природу. Вместе они поселяются в доме 221Б на Бейкер-стрит у пожилой хозяйки миссис Хадсон. Вместе Шерлок и Джон занимаются расследованием сложных дел, используя методы анализа и дедукции, а также интернет и мобильные телефоны.
+                    </div>
+                </div>
+            </div>
+            <form class="content__make_review">
+                <div class="review__name">SeriousSeriesWatcher</div>
+                <textarea class="review__input" placeholder="Текст обзора..."></textarea>
+                <div class="review__undertext">Рекомендуете ли вы этот сериал?</div>
+                <div class="review__controls">
+                    <button class="controls__positive button button_review_positive">
+                        <img src="./images/review_positive.svg" alt="" srcset="">
+                        <span>Да</span>
+                    </button>
+                    <button class="controls__negative button button_review_negative">
+                        <img src="./images/review_negative.svg" alt="" srcset="">
+                        <span>Нет</span>
+                    </button>
+                </div>
+            </form>
+            <div class="content__review">
+                <div class="review__info">
+                    <div class="review__detail">
+                        <div class="review__name">SeriousSeriesWatcher</div>
+                        <div class="review__datetime">15.03.2021 - 20:35</div>
+                    </div>
+                    <div class="review__rating rating_card_negative">
+                        <img src="./images/review_negative.svg" alt="" srcset="">
+                        <span>Не рекомендую</span>
+                    </div>
+                </div>
+                <div class="review__text">
+                    Шерлок - это сериал, который захватывает ум и сердце каждого зрителя. Бенедикт Камбербэтч и Мартин Фриман великолепно сыграли роли Шерлока Холмса и Джона Ватсона, заполнив их жизнью и энергией. Сценарий также является истинным шедевром, смешивая интригу, развитие персонажей и неожиданные повороты сюжета. Весь сериал создает удивительную атмосферу и с каждой серией становится только лучше. Я не могу ждать, чтобы узнать, что приготовили создатели для следующего сезона!
+                </div>
+            </div>
+            <div class="content__review">
+                <div class="review__info">
+                    <div class="review__detail">
+                        <div class="review__name">SeriousSeriesWatcher</div>
+                        <div class="review__datetime">15.03.2021 - 20:35</div>
+                    </div>
+                    <div class="review__rating rating_card_positive">
+                        <img src="./images/review_positive.svg" alt="" srcset="">
+                        <span>Рекомендую</span>
+                    </div>
+                </div>
+                <div class="review__text">
+                    Шерлок - это сериал, который захватывает ум и сердце каждого зрителя. Бенедикт Камбербэтч и Мартин Фриман великолепно сыграли роли Шерлока Холмса и Джона Ватсона, заполнив их жизнью и энергией. Сценарий также является истинным шедевром, смешивая интригу, развитие персонажей и неожиданные повороты сюжета. Весь сериал создает удивительную атмосферу и с каждой серией становится только лучше. Я не могу ждать, чтобы узнать, что приготовили создатели для следующего сезона!
+                </div>
+            </div>
+        </div>
+        <div class="main__chat">
+            <div class="chat__content">
+                <div class="chat__message">
+                    <div class="message__name">SleuthGirl</div>
+                    <div class="message__time">20.10.2023 - 21:30</div>
+                    <div class="message__text">
+                        Шерлок - лучший детектив всех времен! Каждый эпизод напряженный и завораживающий. Мне нравится, как он разгадывает сложнейшие загадки безошибочно. Захватывает дух!
+                    </div>
+                </div>
+                <div class="chat__message">
+                    <div class="message__name">SleuthGirl</div>
+                    <div class="message__time">20.10.2023 - 21:30</div>
+                    <div class="message__text">
+                        Шерлок - лучший детектив всех времен! Каждый эпизод напряженный и завораживающий. Мне нравится, как он разгадывает сложнейшие загадки безошибочно. Захватывает дух!
+                    </div>
+                </div>
+                <div class="chat__message">
+                    <div class="message__name">SleuthGirl</div>
+                    <div class="message__time">20.10.2023 - 21:30</div>
+                    <div class="message__text">
+                        Шерлок - лучший детектив всех времен! Каждый эпизод напряженный и завораживающий. Мне нравится, как он разгадывает сложнейшие загадки безошибочно. Захватывает дух!
+                    </div>
+                </div>
+                <div class="chat__message">
+                    <div class="message__name">SleuthGirl</div>
+                    <div class="message__time">20.10.2023 - 21:30</div>
+                    <div class="message__text">
+                        Шерлок - лучший детектив всех времен! Каждый эпизод напряженный и завораживающий. Мне нравится, как он разгадывает сложнейшие загадки безошибочно. Захватывает дух!
+                    </div>
+                </div>
+                <div class="chat__message">
+                    <div class="message__name">SleuthGirl</div>
+                    <div class="message__time">20.10.2023 - 21:30</div>
+                    <div class="message__text">
+                        Шерлок - лучший детектив всех времен! Каждый эпизод напряженный и завораживающий. Мне нравится, как он разгадывает сложнейшие загадки безошибочно. Захватывает дух!
+                    </div>
+                </div>
+                <div class="chat__message">
+                    <div class="message__name">SleuthGirl</div>
+                    <div class="message__time">20.10.2023 - 21:30</div>
+                    <div class="message__text">
+                        Шерлок - лучший детектив всех времен! Каждый эпизод напряженный и завораживающий. Мне нравится, как он разгадывает сложнейшие загадки безошибочно. Захватывает дух!
+                    </div>
+                </div>
+                <div class="chat__message">
+                    <div class="message__name">SleuthGirl</div>
+                    <div class="message__time">20.10.2023 - 21:30</div>
+                    <div class="message__text">
+                        Шерлок - лучший детектив всех времен! Каждый эпизод напряженный и завораживающий. Мне нравится, как он разгадывает сложнейшие загадки безошибочно. Захватывает дух!
+                    </div>
+                </div>
+                <div class="chat__message">
+                    <div class="message__name">SleuthGirl</div>
+                    <div class="message__time">20.10.2023 - 21:30</div>
+                    <div class="message__text">
+                        Шерлок - лучший детектив всех времен! Каждый эпизод напряженный и завораживающий. Мне нравится, как он разгадывает сложнейшие загадки безошибочно. Захватывает дух!
+                    </div>
+                </div>
+            </div>
+            <input class="chat__input" placeholder="Написать сообщение..."/>
+        </div>
+    </main>
+    <div class="modal modal_login modal_closed">
+        <form class="modal__form form_login">
+            <div class="modal__header">
+                Добро пожаловать!
+            </div>
+            <input placeholder="Логин" type="text" class="modal__input"/>    
+            <input placeholder="Пароль" type="text" class="modal__input"/>
+            <div class="modal__controls">
+                <button type="submit" class="button button_color_primary">Вход</button>
+                <button type="button" class="button button_transparent_primary">Отмена</button>
+            </div>    
+        </form>
+    </div>
+    <div class="modal modal_sign-in modal_closed">
+        <form class="modal__form form_sign-in">
+            <div class="modal__header">
+                Регистрация
+            </div>
+            <input placeholder="Логин" type="text" class="modal__input"/>    
+            <input placeholder="Пароль" type="text" class="modal__input"/>
+            <input placeholder="Подтверждение пароля" type="text" class="modal__input"/>
+            <input placeholder="Почта" type="text" class="modal__input"/>
+            <div class="modal__controls">
+                <button type="submit" class="button button_color_primary">Зарегистрироваться</button>
+                <button type="button" class="button button_transparent_primary">Отмена</button>
+            </div>    
+        </form>
+    </div>
+</body>
+</html>
