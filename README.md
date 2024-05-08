@@ -1,4 +1,4 @@
-# Burger_HTML-landing
+# SeriesToday_html-landing
 
 Simple landing HTML, CSS, JS on [link](https://dlineone.github.io/SeriesToday_html-landing/).
 
